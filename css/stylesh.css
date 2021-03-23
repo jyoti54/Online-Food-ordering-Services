@@ -1,0 +1,106 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    /* margin: -4px 40px; */
+    margin: -36px 30px;
+}
+#logo img{
+    /* height: 61px;
+    margin: 39px 25px;
+    border-radius: 50px; */
+    height: 61px;
+    margin: 37px 33px;
+    border-radius: 44px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhaina 2', cursive;
+
+}
+/* ninja technique */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+#navbar ul li{
+    /* display: flex;  */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+     color: rgb(248, 244, 244);
+     display: block; 
+     padding: 3px 22px;  
+     border-radius: 20px; 
+     text-decoration: none;  
+}
+#navbar ul li a:hover{
+    color: rgb(6, 5, 8);
+    background-color: rgb(164, 233, 187);   
+}
+#navbar{
+    position: relative;
+}
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url("../images/background.jpg") no-repeat center center/cover;
+     
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    left: 0px;
+}
+
+#home h1{
+    color: rgb(5, 5, 7);
+    text-align: center;
+    font-size: 1.5rem;
+}
+#home p{
+    color: rgb(14, 2, 2);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Source Serif Pro', serif;;
+}
+
+/* Utility Classes */
+/* .h-primary{        or home h1
+    font-size: 3rem;
+    padding: 14px;
+} */ 
