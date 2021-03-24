@@ -18,13 +18,9 @@
     top: 0px; 
 }
 #logo{
-    /* margin: -4px 40px; */
     margin: -36px 30px;
 }
 #logo img{
-    /* height: 61px;
-    margin: 39px 25px;
-    border-radius: 50px; */
     height: 61px;
     margin: 37px 33px;
     border-radius: 44px;
@@ -44,11 +40,13 @@
     width: 100%;
     z-index: -1;
     opacity: 0.4;
+    top: 0px;
+    left: 0px;
 }
 
 
 #navbar ul li{
-    /* display: flex;  */
+
     list-style: none;
     font-size: 1.3rem;
 }
@@ -72,15 +70,16 @@
     flex-direction: column;
     padding: 3px 200px;
     justify-content: center;
-    height: 750px;
+    height: 463px;
     align-items: center; 
 }
 #home::before{
     content: "";
     position: absolute;
     background:url("../images/background.jpg") no-repeat center center/cover;
-     
-    height: 100%;
+    top: 0;
+    left 0; 
+    height: 65%;
     width: 100%;
     z-index: -1;
     opacity: 0.6;
@@ -91,19 +90,22 @@
     color: rgb(5, 5, 7);
     text-align: center;
     font-size: 1.5rem;
+    margin-top: 190px;
 }
 #home p{
     color: rgb(14, 2, 2);
     text-align: center;
     font-size: 1.5rem;
-    font-family: 'Source Serif Pro', serif;;
+    font-family: 'Source Serif Pro', serif;
 }
 
 
 /* Menu Section*/
 .menu-container{
+    /* height: ; */
     text-align: center;
     /* padding: 5px 20px 50px 2px; */
+    margin-top: 40px;
 }
 #menu{
     margin: 40px;
@@ -121,21 +123,20 @@
     height: 150px;
     
 }
-#menu{
-    
-}
-#menu{
-    
+#menu .box p{
+    font-family: 'Source Serif Pro', serif;     
 }
 
 
 /* Utility Classes */
-.h-primary{        
+.h-primary{   
+    font-family: 'Source Serif Pro', serif;     
     font-size: 3rem;
-    padding: 14px;
+    padding: 20px;
 } 
-.h-secondary{        
-    font-size: 2.8rem;
+.h-secondary{ 
+    font-family: 'Source Serif Pro', serif;       
+    font-size: 1.5rem;
     padding: 14px;
 }
 .btn{
@@ -149,4 +150,85 @@
     cursor: pointer;
 }
 
+
+
+/* sponser-section */
+#sponser-section{
+    text-align: center; 
+    height: 280px;
+    position: relative;
+}
+#sponsers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sponser-item{
+    padding: 8px;
+}
+.sponser-item img{
+    height: 90px;
+}
+
+#sponser-section::before{
+    content: "";
+    position: absolute;
+    background: url("../images/backghrondsponsers\ food\ .jpg");
+    width: 100%;
+    height: 75%;
+    z-index: -1;
+    opacity: 0.4;
+    left: 0px;
+}
+
+/* Contact section */
+#contact-us-section{
+    text-align: center;  
+    /* height: 280px; */
+    position: relative;
+}
+
+#contact-us-section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    left: 0px;
+    background: url("../images/foo.jpg") no-repeat center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    text-align: left;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.2rem; 
+    font-family: 'Source Serif Pro', serif; 
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+
+
+/* Footer */
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
 
