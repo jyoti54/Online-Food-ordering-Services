@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 /* CSS Variables */
 :root{
     --navbar-height: 59px;
@@ -14,7 +17,7 @@
 #navbar{
     display: flex;
     align-items: center;
-    position:absolute;
+    position: sticky;
     top: 0px; 
 }
 #logo{
@@ -39,7 +42,7 @@
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.6;
     top: 0px;
     left: 0px;
 }
@@ -62,8 +65,6 @@
     background-color: rgb(164, 233, 187);   
 }
 
-
-
 /* Home Section */
 #home{
     display: flex;
@@ -77,9 +78,9 @@
     content: "";
     position: absolute;
     background:url("../images/background.jpg") no-repeat center center/cover;
-    top: 0;
-    left 0; 
-    height: 65%;
+    top: 0px;
+    left 0px; 
+    height: 67%;
     width: 100%;
     z-index: -1;
     opacity: 0.6;
@@ -99,12 +100,9 @@
     font-family: 'Source Serif Pro', serif;
 }
 
-
 /* Menu Section*/
-.menu-container{
-    /* height: ; */
+#menu-container{
     text-align: center;
-    /* padding: 5px 20px 50px 2px; */
     margin-top: 40px;
 }
 #menu{
@@ -113,20 +111,18 @@
     text-align: center;
 }
 #menu .box{
-    border: 3px solid brown; 
-    padding: 10px;
-    margin: 3px 6px;
+    border: 2px solid brown; 
+    padding: 34px;
+    margin: 3px 25px;
     border-radius: 28px; 
     background-color: rgb(137, 208, 230);
 }
 #menu .box img{
-    height: 150px;
-    
+    height: 150px;   
 }
 #menu .box p{
     font-family: 'Source Serif Pro', serif;     
 }
-
 
 /* Utility Classes */
 .h-primary{   
@@ -155,8 +151,6 @@
 /* sponser-section */
 #sponser-section{
     text-align: center; 
-    height: 280px;
-    position: relative;
 }
 #sponsers{
     display: flex;
@@ -172,10 +166,10 @@
 
 #sponser-section::before{
     content: "";
-    position: absolute;
+    position: absolute; 
     background: url("../images/backghrondsponsers\ food\ .jpg");
     width: 100%;
-    height: 75%;
+    height: 27%;
     z-index: -1;
     opacity: 0.4;
     left: 0px;
@@ -184,8 +178,8 @@
 /* Contact section */
 #contact-us-section{
     text-align: center;  
-    /* height: 280px; */
     position: relative;
+    margin-top: 20px;
 }
 
 #contact-us-section::before{
@@ -197,6 +191,7 @@
     opacity: 0.4;
     left: 0px;
     background: url("../images/foo.jpg") no-repeat center/cover;
+    margin-top: 15px;
 }
 
 #contact-box{
@@ -232,3 +227,8 @@ footer{
     padding: 9px 20px;
 }
 
+
+
+html{
+    scroll-behavior: smooth;
+}
