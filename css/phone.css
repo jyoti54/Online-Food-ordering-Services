@@ -13,10 +13,9 @@
     height: 370px;
     padding: 2px 16px;
 }
-}
 
 #home::before{
-    height: 480px; 
+    height: 554px; 
 }
 #home p{
     font-size: 13px;
@@ -31,6 +30,7 @@
     padding: 14px;
     margin: 2px 0px;
     margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 /* Sponser-section */
@@ -55,6 +55,7 @@
 /* Utility classes */
 .h-primary{
     font-size: 26px;
+    /* padding: 46px; */
 }
 
 .btn{
